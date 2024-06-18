@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "token"
+name = "toll"
 version = "0.1.0"
 description = ""
 authors = ["Mark Anthony Gibbins <xiy3x0@gmail.com>"]
@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.12"
 flask = "^3.0.3"
 tiktoken = "^0.7.0"
+gunicorn = "^22.0.0"
 
 
 [build-system]
