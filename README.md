@@ -1,5 +1,5 @@
 
-# Token Count Microservice
+# toll
 
 This microservice takes a string of content and returns the token count using the `tiktoken` library. It is built using Flask.
 
@@ -15,20 +15,21 @@ This microservice takes a string of content and returns the token count using th
 - Python 3.x
 - Flask
 - tiktoken
+- Poetry
 
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/token-count-microservice.git
-   cd token-count-microservice
+   git clone https://github.com/haha-systems/toll.git
+   cd toll
    ```
 
 2. Install the required packages:
 
    ```bash
-   pip install flask tiktoken
+   pip install flask tiktoken poetry
    ```
 
 3. Create a `requirements.txt` file:
@@ -42,13 +43,13 @@ This microservice takes a string of content and returns the token count using th
 1. Run the Flask app:
 
    ```bash
-   python app.py
+   python main.py
    ```
 
 2. Send a POST request to the `/token_count` endpoint with the content you want to tokenize. For example, using `curl`:
 
    ```bash
-   curl -X POST -H "Content-Type: application/json" -d '{"content": "Your content here"}' http://127.0.0.1:5000/token_count
+   curl -X POST -H "Content-Type: application/json" -d '{"content": "Your content here"}' http://127.0.0.1:4000/token_count
    ```
 
    You should get a JSON response with the token count:
